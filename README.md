@@ -222,4 +222,12 @@ We provide web interface to test the model. You can use the following command to
 
 - On a video
 
-    Nope, I haven't tried it yet.
+    You can run the video object detection using the same detect.py file
+
+      ```bash
+    $ python detect.py \
+        --weights yolov7_cityscapes.pt \
+        --conf 0.25 \
+        --img-size 640 \
+        --source video.mp4
+    ```

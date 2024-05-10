@@ -1,3 +1,6 @@
+# Please refer to `training_output` folder for sample training results and Report.pdf for documentation of execution
+<br/>
+
 # YOLOv7 on Cityscapes with bbox cropping
 
 ## Introduction
@@ -60,28 +63,7 @@ We trained a YOLOv7 model on the Cityscapes dataset (convert to COCO format usin
         -O ./yolov7/yolov7_cityscapes.pt
     ```
 
-## Test Interface
-![Test Interface](imgs/web.png)
 
-We provide web interface to test the model. You can use the following command to start the web server.
-
-1. Put your street view video in `./www`, and rename it to `street_view.mp4`.
-
-2. Start the backend server on a terminal
-
-    ```bash
-    $ cd yolov7
-    $ python detect-web.py
-    ```
-
-3. Start the front-end on the other terminal
-
-    ```bash
-    $ cd www
-    $ sh launch.sh
-    ```
-
-4. Go to http://localhost:30700/
 
 ## Train and evaluate the YOLOv7 model
 1. You should `cd` to `yolov7` folder first
@@ -224,10 +206,12 @@ We provide web interface to test the model. You can use the following command to
 
     You can run the video object detection using the same detect.py file
 
-      ```bash
-    $ python detect.py \
-        --weights yolov7_cityscapes.pt \
-        --conf 0.25 \
-        --img-size 640 \
-        --source video.mp4
+    ```bash
+      $ python detect.py \
+      --weights yolov7_cityscapes.pt \
+      --conf 0.25 \
+      --img-size 640 \
+      --source video.mp4
     ```
+
+
